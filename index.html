@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animeflix</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Animeflix</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Categories</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">My List</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Banner Carousel -->
+    <div id="animeCarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#animeCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#animeCarousel" data-slide-to="1"></li>
+            <li data-target="#animeCarousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=1200,height=675/catalog/crunchyroll/a249096c7812deb8c3c2c907173f3774.jpg" class="d-block w-100" alt="Anime 1">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>One piece</h5>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=1200,height=675/catalog/crunchyroll/3f283002b47c62b1e5d311c45f95c97e.jpg" class="d-block w-100" alt="Anime 2">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Naruto</h5>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://s2-techtudo.glbimg.com/fscjBXjyh15CsR0umO4h0i8O05M=/0x0:1280x720/888x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2023/J/8/EbfA0BTv2pV98gASWdfA/f5d0f04e85a224493fe9caa2e59740811630901421-main.png" class="d-block w-100" alt="Anime 3">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Kimetsu no yaiba</h5>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#animeCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#animeCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <!-- Popular Animes Section -->
+    <div class="container mt-5">
+        <h2>Popular Animes</h2>
+        <div class="row">
+            <!-- Anime Card 1 -->
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=480,height=720/catalog/crunchyroll/757bae5a21039bac6ebace5de9affcd8.jpg" class="card-img-top" alt="Anime 1">
+                    <div class="card-body">
+                        <h5 class="card-title">One piece</h5>
+                        <p class="card-text">One Piece segue Monkey D. Luffy e sua tripulação em busca do lendário tesouro One Piece para se tornar o Rei dos Piratas. A série combina aventuras emocionantes, batalhas épicas e temas de amizade. É uma jornada através de um vasto mundo de piratas e mistérios.</p>
+                        <a href="#" class="btn btn-primary">Assita agora</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Anime Card 2 -->
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="https://m.media-amazon.com/images/M/MV5BZGFiMWFhNDAtMzUyZS00NmQ2LTljNDYtMmZjNTc5MDUxMzViXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_FMjpg_UX1000_.jpg" class="card-img-top" alt="Anime 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Naruto</h5>
+                        <p class="card-text">Naruto conta a história de Naruto Uzumaki, um jovem ninja com o sonho de se tornar Hokage, o líder de sua aldeia. Com um espírito indomável e habilidades especiais, ele enfrenta desafios e inimigos enquanto busca reconhecimento e protege seus amigos. A série explora temas de perseverança, amizade e auto-descoberta.</p>
+                        <a href="#" class="btn btn-primary">Assista agora</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Anime Card 3 -->
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="https://br.web.img3.acsta.net/pictures/19/09/18/13/46/0198270.jpg" class="card-img-top" alt="Anime 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Kimetsu no yaiba</h5>
+                        <p class="card-text">*Kimetsu no Yaiba* segue **Tanjiro Kamado**, um jovem que se torna caçador de demônios para vingar sua família e salvar sua irmã Nezuko, que foi transformada em demônio. A série mistura ação intensa e uma busca pela redenção, enquanto Tanjiro enfrenta poderosos inimigos e descobre segredos sobre o mundo dos demônios.</p>
+                        <a href="#" class="btn btn-primary">Assista agora</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Custom JS -->
+    <script src="scripts.js"></script>
+</body>
+</html>
