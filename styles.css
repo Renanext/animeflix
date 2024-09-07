@@ -22,3 +22,57 @@ body {
     height: 450px;
     object-fit: cover;
 }
+
+/* Estilos para Animes */
+.anime-card {
+    transition: transform 0.2s ease-in-out;
+}
+
+.anime-card:hover {
+    transform: scale(1.05);
+}
+
+/* Estilos para os Botões de Filtro */
+.filter-btn {
+    margin: 5px;
+}
+
+/* Modal */
+.modal-body {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+/* Estilos para o menu suspenso */
+.dropdown-menu a {
+    cursor: pointer;
+}
+
+/* Estilos para "My List" */
+#favoriteList .anime-card {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #333;
+}
+
+#favoriteList .anime-card img.favorite-img {
+    width: 300px;
+    height: 400px;
+    object-fit: cover; /* Ajusta a imagem para preencher o tamanho especificado sem distorção */
+    margin-right: 10px;
+}
+
+#favoriteList .btn-remove-favorite {
+    margin-left: auto;
+    background-color: #ff4c4c; 
+    border: none;
+    color: #fff;
+    transition: background-color 0.2s ease-in-out;
+}
+
+#favoriteList .btn-remove-favorite:hover {
+    background-color: #ff1c1c; 
+}
+
+
