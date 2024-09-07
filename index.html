@@ -21,11 +21,20 @@
                 <li class="nav-item active">
                     <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Categories</a>
+                <!-- Dropdown "Categories" -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="categoriesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Categories
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="categoriesDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Adventure</a>
+                        <a class="dropdown-item" href="#">Romance</a>
+                        <a class="dropdown-item" href="#">Drama</a>
+                    </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">My List</a>
+                    <a class="nav-link" href="my_list.html">My List</a>
                 </li>
             </ul>
         </div>
@@ -33,6 +42,7 @@
 
     <!-- Banner Carousel -->
     <div id="animeCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Carousel content -->
         <ol class="carousel-indicators">
             <li data-target="#animeCarousel" data-slide-to="0" class="active"></li>
             <li data-target="#animeCarousel" data-slide-to="1"></li>
@@ -74,34 +84,34 @@
         <div class="row">
             <!-- Anime Card 1 -->
             <div class="col-md-4">
-                <div class="card mb-4">
+                <div class="card mb-4 anime-card">
                     <img src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=480,height=720/catalog/crunchyroll/757bae5a21039bac6ebace5de9affcd8.jpg" class="card-img-top" alt="Anime 1">
                     <div class="card-body">
                         <h5 class="card-title">One piece</h5>
-                        <p class="card-text">One Piece segue Monkey D. Luffy e sua tripulação em busca do lendário tesouro One Piece para se tornar o Rei dos Piratas. A série combina aventuras emocionantes, batalhas épicas e temas de amizade. É uma jornada através de um vasto mundo de piratas e mistérios.</p>
-                        <a href="#" class="btn btn-primary">Assita agora</a>
+                        <p class="card-text">One Piece segue Monkey D. Luffy e sua tripulação em busca do lendário tesouro One Piece para se tornar o Rei dos Piratas.</p>
+                        <button class="btn btn-primary add-to-favorites" data-title="One piece" data-image="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=480,height=720/catalog/crunchyroll/757bae5a21039bac6ebace5de9affcd8.jpg">Adicionar aos Favoritos</button>
                     </div>
                 </div>
             </div>
             <!-- Anime Card 2 -->
             <div class="col-md-4">
-                <div class="card mb-4">
+                <div class="card mb-4 anime-card">
                     <img src="https://m.media-amazon.com/images/M/MV5BZGFiMWFhNDAtMzUyZS00NmQ2LTljNDYtMmZjNTc5MDUxMzViXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_FMjpg_UX1000_.jpg" class="card-img-top" alt="Anime 2">
                     <div class="card-body">
                         <h5 class="card-title">Naruto</h5>
-                        <p class="card-text">Naruto conta a história de Naruto Uzumaki, um jovem ninja com o sonho de se tornar Hokage, o líder de sua aldeia. Com um espírito indomável e habilidades especiais, ele enfrenta desafios e inimigos enquanto busca reconhecimento e protege seus amigos. A série explora temas de perseverança, amizade e auto-descoberta.</p>
-                        <a href="#" class="btn btn-primary">Assista agora</a>
+                        <p class="card-text">Naruto conta a história de Naruto Uzumaki, um jovem ninja com o sonho de se tornar Hokage, o líder de sua aldeia.</p>
+                        <button class="btn btn-primary add-to-favorites" data-title="Naruto" data-image="https://m.media-amazon.com/images/M/MV5BZGFiMWFhNDAtMzUyZS00NmQ2LTljNDYtMmZjNTc5MDUxMzViXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_FMjpg_UX1000_.jpg">Adicionar aos Favoritos</button>
                     </div>
                 </div>
             </div>
             <!-- Anime Card 3 -->
             <div class="col-md-4">
-                <div class="card mb-4">
+                <div class="card mb-4 anime-card">
                     <img src="https://br.web.img3.acsta.net/pictures/19/09/18/13/46/0198270.jpg" class="card-img-top" alt="Anime 3">
                     <div class="card-body">
                         <h5 class="card-title">Kimetsu no yaiba</h5>
-                        <p class="card-text">*Kimetsu no Yaiba* segue **Tanjiro Kamado**, um jovem que se torna caçador de demônios para vingar sua família e salvar sua irmã Nezuko, que foi transformada em demônio. A série mistura ação intensa e uma busca pela redenção, enquanto Tanjiro enfrenta poderosos inimigos e descobre segredos sobre o mundo dos demônios.</p>
-                        <a href="#" class="btn btn-primary">Assista agora</a>
+                        <p class="card-text">Kimetsu no Yaiba segue Tanjiro Kamado, um jovem que se torna caçador de demônios para vingar sua família.</p>
+                        <button class="btn btn-primary add-to-favorites" data-title="Kimetsu no yaiba" data-image="https://br.web.img3.acsta.net/pictures/19/09/18/13/46/0198270.jpg">Adicionar aos Favoritos</button>
                     </div>
                 </div>
             </div>
@@ -109,7 +119,7 @@
     </div>
 
     <!-- Bootstrap JS and dependencies -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <!-- Custom JS -->
